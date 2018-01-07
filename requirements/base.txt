@@ -1,0 +1,19 @@
+# django-rosetta
+# django-sendfile
+# django-widget-tweaks
+# django-stdimage
+psycopg2
+django-compressor
+django-model-utils
+django-registration-redux
+django-silk
+Django>=1.10,<1.11
+ipython
+python-memcached
+pytz
+raven
+Sphinx
+sphinx-rtd-theme
+pytest-django
+django-environ
+uwsgi
