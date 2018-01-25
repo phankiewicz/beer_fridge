@@ -1,19 +1,19 @@
-# django-rosetta
-# django-sendfile
-# django-widget-tweaks
-# django-stdimage
-psycopg2
 django-compressor
+django-cors-headers
+django-environ
 django-model-utils
 django-registration-redux
 django-silk
+django-stdimage
 Django>=1.10,<1.11
+djangorestframework
 ipython
+psycopg2
+pytest-django
 python-memcached
 pytz
 raven
 Sphinx
 sphinx-rtd-theme
-pytest-django
-django-environ
 uwsgi
+requests

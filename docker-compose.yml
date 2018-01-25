@@ -11,5 +11,9 @@ services:
       - "8000:8000"
     volumes:
       - .:/code
+      - media:/media
     depends_on:
       - postgres
+volumes:
+  media:
+    driver: local

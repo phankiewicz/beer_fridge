@@ -40,11 +40,14 @@ INSTALLED_APPS = (
     # 'widget_tweaks',
     # 'stdimage',
     # 'sendfile',
+    'corsheaders',
     'debug_toolbar',
+    'rest_framework',
     'registration',
 
-    'beer_fridge',
     'auth_ex',
+    'beer_fridge',
+    'beers',
 )
 
 AUTH_USER_MODEL = 'auth_ex.User'
@@ -84,6 +87,7 @@ TEMPLATES = [
 ]
 
 MIDDLEWARE_CLASSES = (
+    'corsheaders.middleware.CorsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -184,3 +188,6 @@ INTERNAL_IPS = ['127.0.0.1']
 #     'propagate': True,
 #     'formatter': 'simple',
 # }
+
+CORS_ORIGIN_ALLOW_ALL = True
+
