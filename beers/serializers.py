@@ -35,7 +35,6 @@ class BeerSerializer(serializers.ModelSerializer):
             'type',
             'type_info',
             'image',
-            'current_temperature',
         )
 
 
