@@ -40,10 +40,16 @@ class BeerSerializer(serializers.ModelSerializer):
 
 class FridgeShelfSerializer(serializers.ModelSerializer):
 
+    beer_info = BeerSerializer(
+        read_only=True,
+        source="beer",
+    )
+
     class Meta:
         model = FridgeShelf
         fields = (
             'id',
             'beer',
+            'beer_info',
             'current_temperature',
         )
